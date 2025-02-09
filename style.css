@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+#parteUm {
+}
+
+#parteDois {
+    display: none;
+    text-align: center;
+}
+
+#textoFofo {
+    padding-top: 10px;
+}
+
+.titleText {
+    text-align: center;
+}
+
+.estrelas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+
+}
+
+.star {
+    width: 100px;  
+    aspect-ratio: 1;
+    background: yellow;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+}
+
+.starCinza {
+    width: 100px;  
+    aspect-ratio: 1;
+    background: gray;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+}
